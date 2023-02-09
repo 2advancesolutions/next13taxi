@@ -12,6 +12,7 @@ import {
 
 const testimonials = [
   {
+    id: 1,
     name: 'Brandon P.',
     role: 'Chief Marketing Officer',
     content:
@@ -20,6 +21,7 @@ const testimonials = [
       'https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
   {
+    id: 2,
     name: 'Krysta B.',
     role: 'Entrepreneur',
     content:
@@ -27,7 +29,7 @@ const testimonials = [
     avatar:
       'https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
   },
-  {
+  { id: 3,
     name: 'Darcy L.',
     role: 'Movie star',
     content:
@@ -177,7 +179,7 @@ export default function Testimonials() {
         mb={16}
         mx={'auto'}>
         {testimonials.map((cardInfo, index) => (
-          <TestimonialCard {...cardInfo} index={index} />
+          <TestimonialCard  key={cardInfo.id}  {...cardInfo} index={index} />
         ))}
       </SimpleGrid>
       <Box>
