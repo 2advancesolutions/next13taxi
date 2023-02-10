@@ -4,10 +4,11 @@ import Features from '@/components/Features'
 import Testimonials from '@/components/Testimonials'
 export default function Home() {
   return (
-   <>
-   <HeroSection/>
-   <Features/>
-  <Testimonials/>
-   </>
+    <>
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <HeroSection />
+      <Features />
+      <Testimonials />
+    </>
   )
 }
