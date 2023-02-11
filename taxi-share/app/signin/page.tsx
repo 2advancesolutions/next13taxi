@@ -14,7 +14,8 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
-  
+
+
   export default function SignUp() {
     return (
       <Flex
@@ -52,6 +53,8 @@ import {
                   <Link color={'blue.400'}>Forgot password?</Link>
                 </Stack>
                 <Button
+                as={Link}
+                href="/setup"
                   bg={'blue.400'}
                   color={'white'}
                   _hover={{
